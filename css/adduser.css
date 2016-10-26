@@ -1,0 +1,18 @@
+table {
+	border:1px solid black;
+	height:50px;
+	width:800px;
+}
+
+
+#section h1 {
+	width:800px;
+	border-bottom:1px solid black;
+}
+
+	
+#section input{
+	
+	display:inline-block;
+	margin-left:40px;
+}

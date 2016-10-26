@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Doctor Git Demo/Contact Assignment</title>
+		<meta name="description" content="This is contact card assignment"/>
+		<link href="../css/contact.css" rel="stylesheet" type="text/css">
+		<link href="../css/contact.css" rel="stylesheet" type="text/css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+		<script>
+           $(document).ready(function(){
+		      $("button").click(function(){
+			    var firstname = $("input[name='firstname']").val();
+				var lastname = $("input[name='lastname']").val();
+				var Description = $("textarea[name='Description']").val();
+				
+				  $('#left-bar').append("<div class='card'>" +"<h3>"+firstname+ lastname+"</h3>" + "<p>"+Description+"</p>"+ "</div>");
+				  return false;
+				});
+			  });
+		   
+		</script>
+    </head>
+	<body>
+		<div id="wrapper">
+		  <h1>Contact card</h1>
+		  <hr>
+			<form id="display">
+				First name: <input type="text" name="firstname" placeholder="First Name">
+				Last name:  <input type="text" name="lastname" placeholder="Last Name">
+				Description: <textarea row="4" cols="20" type="text" name="Description" placeholder="Description"></textarea>
+				<button type="submit" value="submit">submit</button>
+			</form><!--close display-->
+			<div id="left-bar">
+
+			</div><!--close left-bar -->
+		</div><!--close wrapper-->
+	</body>
+</html>
+

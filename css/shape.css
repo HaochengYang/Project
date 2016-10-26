@@ -1,0 +1,58 @@
+#display-box{
+	margin-bottom:20px;
+	border:2px solid black;
+	width:800px;
+}
+
+
+#slide-down{
+	width:200px;
+	font-size:12px;
+	padding:20px;
+}
+
+#button-box{
+
+	width:800px;
+	border:2px solid black;
+}
+	
+#input-value{
+	margin-left:20px;
+	margin-bottom: 20px;
+	border: 1px solid black;
+}
+
+img{
+	display:none;
+}
+button{
+	border-radius:5px;
+	vertical-align:top;
+	color:red;
+	width:100px;
+	height:40px;
+}
+
+#button-box li{
+	margin-bottom:20px;
+	margin-right:10px;
+	border-right:1px solid black;
+	list-style-type:none;
+	display:inline-block;
+}
+
+#button-box ul{
+	padding:
+}
+
+#Qury1{
+	vertical-align:top;
+	width:100px;
+	height:40px;
+	font-size:12px;
+}
+
+.h2clss{
+	color:gray;
+}

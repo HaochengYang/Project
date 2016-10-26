@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <title>ninjia image</title>
+   <meta name="description" content="This is a class assignment"/>
+   <link href="../css/ninjia.css" rel="stylesheet" type="text/css"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+   <script>
+     $(document).ready(function(){
+	 
+	    $("#cat-img").click(function(){
+		 $(".cat").toggle(1000);
+		});
+		
+		$("#ninja-img").click(function(){
+		 $(".ninjia").toggle(1000);
+		});
+		
+		$(".cool-image").click(function(){
+		      $(this).attr({
+		  src: $(this).attr("alt"),
+		  alt: $(this).attr("src")
+		});
+		});
+		
+	 });
+   </script>
+ </head>
+ <body>
+    <div id="wrapper">
+	 <div id="img-section">
+	 <h2 id="cat-img">Our Cat is here</h2>
+	  <ul>
+	   <li><img class="cat" src="../image/Ninjia/cat0.png" alt="this is a cat"></li>
+	   <li><img class="cat" src="../image/Ninjia/cat1.png" alt="this is a cat"></li>
+	   <li><img class="cat" src="../image/Ninjia/cat2.png" alt="this is a cat"></li>
+	   <li><img class="cat" src="../image/Ninjia/cat3.png" alt="this is a cat"></li>
+	   <li><img class="cat" src="../image/Ninjia/cat4.png" alt="this is a cat"></li>
+	  </ul>
+	  <h2 id="ninja-img">Our Ninjia is here</h2>
+	   <ul>
+	    <li><img class="ninjia" src="../image/Ninjia/ninja0.png" alt="this is a ninjia"></li>
+		<li><img class="ninjia" src="../image/Ninjia/ninja1.png" alt="this is a ninjia"></li>
+		<li><img class="ninjia" src="../image/Ninjia/ninja2.png" alt="this is a ninjia"></li>
+		<li><img class="ninjia" src="../image/Ninjia/ninja3.png" alt="this is a ninjia"></li>
+		<li><img class="ninjia" src="../image/Ninjia/ninja4.png" alt="this is a ninjia"></li>
+	   </ul>
+	   <h1>Want to try some cool thing here, Click the img</h1>
+	    <ul>
+		 <li><img class="cool-image" src="../image/Ninjia/cat0.png" alt="../image/Ninjia/ninja0.png"></li>
+		 <li><img class="cool-image" src="../image/Ninjia/cat1.png" alt="../image/Ninjia/ninja1.png"></li>
+		 <li><img class="cool-image" src="../image/Ninjia/cat2.png" alt="../image/Ninjia/ninja2.png"></li>
+		 <li><img class="cool-image" src="../image/Ninjia/cat3.png" alt="../image/Ninjia/ninja3.png"></li>
+		 <li><img class="cool-image" src="../image/Ninjia/cat4.png" alt="../image/Ninjia/ninja4.png"></li>
+		</ul>
+	 </div><!--close img-section-->
+	</div><!--close wrapper-->
+ </body>
+</html>

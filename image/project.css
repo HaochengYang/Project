@@ -1,0 +1,65 @@
+#warpper{    
+    width:1200px;
+	height:1100px;
+	background-color:#eee;
+	}
+
+#topnavbar{
+	padding:10px;
+	height:auto;
+	width: 1180px;
+	background-color:lightblue;
+}
+
+#image-logo{
+	float:left;
+	width:150px;
+	height:50px;
+}
+#nav-menue, #footcss{
+	list-style-type: none;
+}
+#nav-menue li{
+	margin:10px;
+	font-size:18px;
+	padding:5px;
+	background-color:pink;
+	font-family:Serif;
+	border: 3px;
+	border-style:solid;
+	border-color:blue;
+	display:inline;
+	text-decoration;
+}
+
+#nav-menue a{
+	text-decoration:none;
+}
+
+ }
+
+#main-content{
+	width:1200px;
+}
+
+.box{
+	background-color:gray;
+	float:left;
+	border: 2px solid gray;
+	margin:10px;
+}
+
+}
+#introduction{
+	background-color:lightblue;
+	font-size: 18px;
+}
+
+#footcss li{
+	float:left;
+	margin:20px;
+	display:inline;
+}
+#footcss a{
+	text-decoration:none;
+}

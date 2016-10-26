@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <title>image with jQury</title>
+ <meta name="description" content="image with jQury"/>
+ <link href="../css/image.css" alt="stylesheet" type="text/css"/>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+ <script>
+ $(document).ready(function(){
+    $("img").click(function(){
+	  $(this).hide(100);
+	});
+	
+	$("button").click(function(){
+	  $("img").hide(100);
+	});
+ });
+ </script>
+ </head>
+ <body>
+ <div id="wrapper">
+  <div id="img-section">
+   <img src="../image/download.jpg" alt="trump">
+   <img src="../image/hilary.jpg" alt="hilary">
+   <img src="../image/download.jpg" alt="trump">
+   <img src="../image/hilary.jpg" alt="hilary">
+   <img src="../image/download.jpg" alt="trump">
+   <img src="../image/hilary.jpg" alt="hilary">
+   <img src="../image/download.jpg" alt="trump">
+   <img src="../image/hilary.jpg" alt="hilary">
+   <img src="../image/download.jpg" alt="trump">
+   <img src="../image/hilary.jpg" alt="hilary">
+  </div><!--close img-section-->
+  <button type="button" value="close">Restore</button>
+ </div><!--close wrapper-->
+ </body>
+ </html>

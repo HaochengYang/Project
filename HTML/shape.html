@@ -1,0 +1,114 @@
+<!doctype html>
+ <html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>Shape</title>
+  <meta name="description" content="class project shape"/>
+  <link href="../css/shape.css" rel="stylesheet" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+  <script>
+    function justrefresh(){
+	     location.reload();
+		 alert("Hello! You are on my site right now");
+	}
+	function colorchange(){
+	     document.getElementById("header-p").style.color="red";
+	}
+	
+	$(document).ready(function(){
+         $("#Qury1").click(function(){
+          $("#header-p").toggle(1000);
+          });
+		  
+		 $("#Qury2").click(function(){
+		    $("img").fadeToggle(1000);
+		 });
+		 
+         $("#slide-down").click(function(){
+		     $("#button-box").slideToggle();
+		 });
+		 
+		 $("#Qury3").click(function(){
+		     $("#header-p").css("color","blue").slideUp(1000).slideDown(1000);
+		 });
+		 
+		 $("#Qury4").click(function(){
+		     $("#header-p").animate({left: '100px;'});
+		 });
+		 
+		 $("#Qury5").click(function(){
+		     $("#header-p").append("<br>A Little Bit Fun With JQury!!!");
+		 });
+		 
+		 $("#Qury6").click(function(){
+		     jQuery("#header-p").text("I feel bored to play with it");
+		 });
+		 
+		 $("#Qury7").click(function(){
+		      $("img").fadeOut(1000);
+		 });
+		 
+		 $("#Qury8").click(function(){
+		      $("#header-p").after("Hello guys, I go after");
+		 });
+		 
+		 $("#Qury9").click(function(){
+		     $("#header-p").before("Hello guys, I go before");
+		 });
+		 
+		 $("#input-value").focus(function(){
+		    $("span").css("display","inline").fadeOut(2000);
+		 });
+		 
+		 $("#Qury10").click(function(){
+		    $("div").data("greeting","greeting everyone here !!!")
+		    alert($("div").data("greeting"));
+		 });
+		 
+		 $("#Qury11").click(function(){
+		    $("#header-p").html("greeting <b>everyone here !!!</b>");
+		 });
+		 
+		 $("#Qury12").click(function(){
+		  $("h2").addClass("h2clss");
+		 });
+		 
+       });
+  </script><!--close javascript-->
+ </head>
+ <body>
+ <div id="wrapper">
+  <header>
+    <div id="display-box">
+	<h2>Display Box:</h2>
+	<img  src="../image/download.jpg" alt="trump">
+	<img  src="../image/hilary.jpg" alt="hilary">
+	<p id="header-p">haocheng's first assignment with javascript</p>
+	<input id="input-value" type="box"></input>
+	<span>Nice to have your name here</span>
+	</div><!--close display-box-->
+	<button id="slide-down" type="button">Click to slide down panel</button><!--close slide-down-->
+	<div id="button-box">
+	 <h2>Magic Box:</h2>
+     <ul>
+	  <li><button type="button" onclick="justrefresh()">Click Me To Reload</button></li>
+	  <li><button type="button" onclick="colorchange()">Click Me To Change color</button></li>
+	  <li><button id="Qury1">Click Me To Hide and Show</button></li>
+	  <li><button id="Qury2">See the picture</button></li>
+	  <li><button id="Qury3">See color change</button></li>
+	  <li><button id="Qury4">See the Animate</button></li>
+	  <li><button id="Qury5">See the Add</button></li>
+	  <li><button id="Qury6">See the Replace</button></li>
+	  <li><button id="Qury7">See the Fade Out</button></li>
+	  <li><button id="Qury8">Add the After</button></li>
+	  <li><button id="Qury9">Add the Before</button></li>
+	  <li><button id="Qury10">Date Alert</button></li>
+	  <li><button id="Qury11">Replace by Html</button></li>
+	  <li><button id="Qury12">Add Class</button></li>
+	 </ul>
+	</div><!--close button-box-->
+  </header><!--close header-->
+ </div><!--close  wrapper-->
+ </body>
+ </html>

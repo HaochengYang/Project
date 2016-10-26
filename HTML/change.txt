@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- First time coding at dojo butscam -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <tittle>Welcome to the HTML world</tittle>
+    <meta name="description" content="Haocheng's first page on Coding DoJo">
+    <link rel="stylesheet" href="my_css_file.css">
+    <scripe src="myjavascript_library.js"></script>
+    <script src="my_jevascript_library.js"></script>
+</head>
+<body>
+    <h1>First Day at Coding DoJo</h1><!--h1 is important tag -->
+    <h2>2016 / 10 / 17</h2><!--h2 is less important tag-->
+    <p>Haocheng feels a little bit happy, because he learned the html before</p>
+    <p>I want to display the website we currently runing right now</p>
+    <img src="https://goo.gl/images/M4hexs" alt="an image" height="200" width="100">
+    <a href="https://missdolphin.com">missdolphin</a>
+    <ol>
+      <li> We sale cosmetic products</li>
+      <li> We import product from Japan and Korean</li>
+      <li> We are the biggest online cosmetic saler in great Seattle are</li>
+      <li> We have two programer right now and still hiring more to join us</li>
+      <li> Miss Dolphin is a startup company right now</li>
+      <li> No more list right now and I planing write later on</li>
+    </ol>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+</body>

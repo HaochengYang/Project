@@ -1,0 +1,29 @@
+#wrapper{
+	background-color:#eee;
+	width:970px;
+	height:auto;
+}
+
+.card {
+	margin-bottom:10px;
+	height:80px;
+	width: 300px;
+	border:1px solid black;
+}
+
+input {
+	margin-bottom:30px;
+}
+
+#display {
+	display:inline-block;
+	text-align:right;
+	margin-left:100px;
+	width:260px;
+}
+
+#left-bar {
+    display:inline-block;
+	float:right;
+	width:320px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>world</title>
+    <meta name="description" content="third class project"/>
+	<link href="../css/world.css" rel="stylesheet"type="text/css"/>
+	<link rel="stylesheet" href="../css/world.css" media="screen" title="no title">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <img src="../image/world/logo.png" alt="logo of the page">
+        <h1><span>World</span> Stream</h1>
+        <nav>
+          <ul>
+            <li><a href="">Product</a></li>
+            <li><a href="">Learn SEM</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Ad World Grander</a></li>
+          </ul>
+		  <button type="button" name="login">login</button>
+        </nav><!--close nav-->
+		<div id="header-content">
+		  <h2>WorldSteam Internet Marketing Software</h2>
+		</div>
+      </div><!--close header-->
+      <div id="left-side-bar">
+	    <div id="side-bar-box">
+		 <h3>WordStream for PPC</h3>
+		 <h4>Drive More Profits Through PPC!</h4>
+		 <p>Get Strated with <a href="">WorldStream's</a> Powerful PPC Platform Today</P>
+		 <div id="side-bar-button">
+		  <button type="button" name="SECHEDULE DEMO">SECHEDULE DEMO</button>
+		  <br>
+		  <button type="button" name="FREE TRAILA">FREE TRAILA</button>
+		  </div><!--close side-bar-button-->
+		  <p id="center">(No Credit Card Required)</p>
+		</div><!--close side-bar-box -->
+		<div id="side-bar-image">
+		 <h2>How does your AdWords performance measure up?</h2>
+		 <p>Get a free, install report with the WordSteam Adwords Performance Garder</p>
+		 <button type="button" name="Get Garded Today">Get Garded Today</button>
+		</div><!--close side-bar-image-->
+      </div><!--close left-side-bar-->
+      <div id="main-content">
+      </div><!--close main-content-->
+    </div><!--close wrapper-->
+  </body>
+</html>
