@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html ng-app='Login-app'>
+<html ng-app="AddUser">
   <head>
     <meta charset="utf-8">
-    <title>Login and registration</title>
+    <link src='stylesheet' type="text/css" href="./static/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
     <script type="text/javascript" src="app.js"></script>
-    <script type="text/javascript" src="./controller/session.js"></script>
-    <script type="text/javascript" src="./factory/session.js"></script>
+    <script type="text/javascript" src="./controller/UserController.js"></script>
+    <script type="text/javascript" src="./factory/UserFactory.js"></script>
+    <title>User Registration and Login</title>
   </head>
   <body>
     <div ng-view>
+
     </div>
   </body>
 </html>

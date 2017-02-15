@@ -1,0 +1,18 @@
+<header class="hundo" ng-controller="headerController">
+	<h1>Bucket List</h1>
+	<a href="#!/dash">Home</a>
+	<a class="linkify" ng-click="logout()">Logout</a>
+</header>
+<section class="hundo" ng-controller="userController">
+	<h2>{{ user.firstName[0].toUpperCase() + user.firstName.slice(1) }} {{ user.lastName[0].toUpperCase() + user.lastName.slice(1) }}'s Bucket List</h2>
+	<h3>Done</h3>
+	<div class="bucket" ng-repeat="bucket in buckets | filter: !done">
+		<input type="checkbox" ng-checked="bucket.done === true" ng-model="checkBox.id" ng-click="markDone(bucket)">
+		<p>{{ bucket._user.firstName[0].toUpperCase() + bucket._user.firstName.slice(1) }} {{ bucket._user.lastName[0].toUpperCase() + bucket._user.lastName.slice(1) }} | {{ bucket.title }} - {{ bucket.desc }} - {{ bucket.createdAt | date: 'MMM d, yyyy' }}</p>
+	</div><!-- end_of_bucket-->
+	<h3>Pending</h3>
+	<div class="bucket" ng-repeat="bucket in buckets | filter: done == true">
+		<input type="checkbox" ng-checked="bucket.done === true" ng-model="checkBox.id" ng-click="markDone(bucket)">
+		<p>{{ bucket._user.firstName[0].toUpperCase() + bucket._user.firstName.slice(1) }} {{ bucket._user.lastName[0].toUpperCase() + bucket._user.lastName.slice(1) }} | {{ bucket.title }} - {{ bucket.desc }} - {{ bucket.createdAt | date: 'MMM d, yyyy' }}</p>
+	</div><!-- end_of_bucket-->
+</section>

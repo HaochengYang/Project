@@ -1,0 +1,31 @@
+<header class="hundo" ng-controller="headerController">
+	<h1>Bucket List</h1>
+	<a href="#!/dash">Home</a>
+	<a class="linkify" ng-click="logout()">Logout</a>
+</header>
+<section class="hundo" ng-controller="bucketController">
+	<h2>Welcome, {{ firstName[0].toUpperCase() + firstName.slice(1) }} {{ lastName[0].toUpperCase() + lastName.slice(1) }}!</h2>
+	<form class="hundo" ng-submit="createBucket()">
+		<div class="notif seventy center">
+			<ul>
+				<li ng-repeat="error in errors">{{ error }}</li>
+			</ul>
+		</div><!-- end_of_notif-->
+		<input class="twenty" type="text" name="title" placeholder="Title" ng-model="newBucket.title">
+		<input class="forty" type="text" name="desc" placeholder="Description" ng-model="newBucket.desc">
+		<select class="twenty" name="tag" ng-model="newBucket._tag">
+			<option ng-repeat="user in users" value="{{ user._id }}">{{ user.firstName[0].toUpperCase() + user.firstName.slice(1) }} {{ user.lastName[0].toUpperCase() + user.lastName.slice(1) }}</option>
+		</select>
+		<input class="btn btn-pop" type="submit" name="submit" value="Add to List">
+	</form>
+	<h3>Before I die I want to:</h3>
+	<div class="bucket" ng-repeat="bucket in buckets">
+		<input type="checkbox" ng-checked="bucket.done === true" ng-model="checkBox.id" ng-click="markDone(bucket)" >
+		<!-- <input type="checkbox" ng-hide="bucket.done" ng-change="unmarkDone(bucket._id)" ng-model="select.done"> -->
+		<p>{{ bucket._user.firstName[0].toUpperCase() + bucket._user.firstName.slice(1) }} {{ bucket._user.lastName[0].toUpperCase() + bucket._user.lastName.slice(1) }} | {{ bucket.title }} - {{ bucket.desc }} - {{ bucket.createdAt | date: 'MMM d, yyyy' }}</p>
+	</div><!-- end_of_bucket-->
+	<h3>List of other users (Click to view profile)</h3>
+	<div class="user" ng-repeat="user in users">
+		<a href="#!/user/{{ user._id }}">{{ user.firstName[0].toUpperCase() + user.firstName.slice(1) }} {{ user.lastName[0].toUpperCase() + user.lastName.slice(1) }}</a>
+	</div>
+</section>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>servey form</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript"src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        //this get sucket.io.module
+        var socket =io.connect();
+        $('#survey_form').submit(function(e){
+          e.preventDefault();
+          socket.emit('posting_form', {
+            name: $('#name').val(),
+            location: $('#location').val(),
+            language: $('#language').val(),
+            comment: $('#comment').val()
+          });
+        });
+
+        socket.on('update_message', function(data){
+          $("#message").html("you emmited the following information to the server:" + JSON.stringify(data.res));
+        })
+
+        socket.on('random_number', function(data){
+          $('#number').html('Your lucky number emmited by the server' + JSON.stringify(data.res));
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <div id='wrapper'>
+      <div id="message"></div>
+      <div id="number"></div>
+      <form action="" id="survey_form">
+        <div>
+          <label for='name'>Your name: </label>
+          <input type="text" name="name" id='name'>
+        </div>
+        <div>
+          <label for="location">Location:</label>
+          <select name='location' id='location'>
+            <option value="Bellevue">Bellevue</option>
+            <option value="Seattle">Seattle</option>
+            <option value="Lynnwood">Lynnwood</option>
+            <option value="Shoreline">Shoreline</option>
+          </select>
+        </div>
+        <div>
+          <label for="language">Language:</label>
+          <select name='language' id='language'>
+            <option value="Java">Java</option>
+            <option value="Javascripts">Javascripts</option>
+            <option value="Python">Python</option>
+            <option value="C#">C#</option>
+          </select>
+        </div>
+        <div>
+          <label for="comment">Comment (optional)</label>
+          <textarea id="comment" name='comment' cols='20' rows='5' placeholder="Please enter Your comment"></textarea>
+        </div>
+        <input type='submit' value="submit">
+      </form><!--close survey_form-->
+    </div><!--close wrapper-->
+  </body>
+</html>

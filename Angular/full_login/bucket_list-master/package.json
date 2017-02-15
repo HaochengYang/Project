@@ -1,0 +1,32 @@
+{
+  "name": "bucket_list",
+  "version": "1.0.0",
+  "description": "Coding Dojo MEAN Black Belt Exam Bucket List",
+  "main": "server.js",
+  "scripts": {
+    "babel-node": "babel-node",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "PJ",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bcryptjs": "^2.4.0",
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
+    "express-session": "^1.15.0",
+    "mongoose": "^4.8.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-es2015": "^6.22.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "webpack": "^1.14.0"
+  }
+}

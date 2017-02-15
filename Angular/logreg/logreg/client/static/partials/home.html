@@ -1,0 +1,17 @@
+<div ng-controller='sessionController'>
+  <p>Welcome: {{curUser.name}} !<a href='/logout'style="float: right;">logout</a></p>
+	<div ng-controller='questionController'>
+      <p><a href="#/dash">Asking a question</a></p>
+      <p style="margin-left:350px;">Search: <input type='text' ng-model="search.question" placeholder="search"></p>
+      <table>
+        <tr style="margin-left:10px;">
+          <th style="padding:15px;,text-align: left;">Question:</th>
+          <th style="padding:15px;,text-align: left;">Answer:</th>
+          <th style="padding:15px;,text-align: left;">Action:</th>
+        </tr>
+        <tr>
+          <td style="height:30px;,vertical-align:bottom;"></td>
+        </tr>
+      </table>
+ </div>
+</div>

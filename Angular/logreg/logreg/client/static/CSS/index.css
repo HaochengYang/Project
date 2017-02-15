@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+main {
+  border: 1px solid gray;
+	box-shadow: 1px 1px 5px gray;
+	margin: 50px auto;
+  border-radius: 5px;
+	padding: 20px;
+}
+
+p{
+  text-align: top;
+}
