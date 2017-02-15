@@ -1,0 +1,8 @@
+class bike(object):
+    def __init__(self,speed,price,miles):
+        print("This is the instence of a bike")
+        self.price = price
+        self.speed = speed
+        self.miles =miles
+
+bike1 = bike("20mph,2000,20")

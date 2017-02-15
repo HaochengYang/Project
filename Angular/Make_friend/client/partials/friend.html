@@ -1,0 +1,22 @@
+<div id='main_content'ng-cntroller='friendController'>
+  <table>
+   <tr>
+     <th>Name</th>
+     <th>Show</th>
+     <th>Update</th>
+     <th>Delete</th>
+   </tr>
+   <tr ng-repeat='friend in friends'>
+     <td>{{friend.firstName}}</td>
+     <td>{{friend.lastName}}</td>
+     <td>{{friend.birthDate}}</td>
+     <td><input type='submit' value="show" ng-click='show()'></td>
+     <td><input type='submit' value="edit" ng-click='edit()'></td>
+     <td><input type='submit' value="delete" ng-click='delete()'></td>
+   </tr>
+ </table>
+  <form>
+      <input type="search" placeholder="Filter Friend">
+      <a href="#/new">New friend</a>
+ </form>
+</div><!--close main_content-->

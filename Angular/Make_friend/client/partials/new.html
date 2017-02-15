@@ -1,0 +1,9 @@
+<div id="new">
+  <form ng-controller="friendController">
+    <p ng-repeat='error in errors' style='color: red'></p>
+    <p>First Name: <input type="text" ng-model='newFriend.firstName'></p>
+    <p>Last Name: <input type="text" ng-model='newFriend.lastName'></p>
+    <p>Birth Day: <input type="date" ng-model='newFriend.birthDate'></p>
+    <p><input type="submit" value="Create friend" ng-click='create()'></p>
+  </form>
+</div>

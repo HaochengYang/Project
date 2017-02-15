@@ -1,0 +1,47 @@
+.trip{
+  display: inline-block;
+  vertical-align: top;
+  height:30%;
+  border: 1px solid black;
+  width:300px;
+  margin-bottom: 20px;
+}
+#Connecting{
+  display: inline-block;
+  vertical-align: top;
+  height:30%;
+  border: 1px solid black;
+  width:300px;
+}
+#Connecting ul{
+  list-style: none;
+}
+#Connecting li{
+  padding-bottom: 10px;
+}
+.trip ul{
+   list-style: none;
+}
+.trip li{
+  padding-bottom: 10px;
+}
+.submit_button{
+    margin-left: 220px;
+}
+
+.trip_title{
+  margin-left: -20px;
+  margin-right: 20px;
+  text-align: right;
+}
+
+
+.trip_input{
+}
+
+h4 {
+  text-align: center;
+}
+h2{
+  text-align: center;
+}

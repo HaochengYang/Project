@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>course file</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'create_course/css/index.css' %}">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="main">
+        <div id="page">
+          <form class="" action="course" method="POST">
+            {% csrf_token %}
+          <h3>Add Your Class Here</h3>
+          <p>Class Title:<input type="text" name="title"></p>
+          <p>Class Description:<input type="text" name="description"></p>
+          <input type="submit" value="sumbit">
+          </form>
+          <table>
+            <tr>
+              <th>Class title</th>
+              <th>Class Description</th>
+              <th>regist Date</th>
+              <th>Action</th>
+            </tr>
+            {% for course in Course %}
+            <tr>
+              <td>{{course.title}}</td>
+              <td>{{course.description}}</td>
+              <td>{{course.create_at}}</td>
+              <td><a href="destroy/{{course.id}}">Remove</a></td>
+            </tr>
+            {% endfor %}
+          </table>
+        </div><!--page-->
+      </div><!--main-->
+    </div><!--wrapper-->
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="Add-student">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="./controller/student_controller.js"></script>
+  </head>
+  <body>
+    <h3>Add a new student!</h3>
+    <div ng-controller='create-student'>
+      Search: <input type='text' ng-model="name">
+
+         <ul>
+           <li ng-repeat="student in students | filter:name">{{ student.name }}, {{ student.age }}<button ng-click="delete($index)">delete</button>
+             <input type='text' ng-model="update_student" placeholder="update name"><button ng-click="update($index, update_student)">update</button></li>
+         </ul>
+         <form>
+           Name: <input type='text' ng-model='newStudent.name'>
+           Age: <input type='text' ng-model='newStudent.age'>
+           <input type='submit' value='add new student' ng-click='addStudent()'>
+         </form>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Trying some static out</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    <!--css file goes here-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}">
+    </script>
+    <!--js file goes here-->
+  </head>
+  <body>
+     <img src="{{url_for('static', filename='image/download.png') }}">
+     <h1>I love this staff</h1>
+  </body>
+</html>

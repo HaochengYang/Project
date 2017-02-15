@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Second Belt Exam</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'appointment/css/index.css' %}">
+    <script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML = "Time for now is:"+ h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+  </head>
+  <body onload="startTime()">
+    <div id="wrapper">
+      <div id="page">
+        <h3>Hello, {{request.session.user_first_name}}</h3>
+        <div id="main">
+         <h4 id="txt"></h4>
+        <h4>Your Other Appointments:</h4>
+        <table>
+          <tr>
+            <td>Task</td>
+            <td>Time</td>
+            <td>status</td>
+            <td>Action</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+
+        <h4>Your Other Appointments:</h4>
+        <table>
+          <tr>
+            <td>Task</td>
+            <td>Date</td>
+            <td>Time</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+
+        <h4>Add Appointment:</4>
+          {% if messages %}
+            {% for message in messages %}
+             <p>{{message}}</p>
+            {% endfor %}
+           {% endif %}
+          <form class="" action="{% url 'appointment:create_appointment' %}" method="POST">
+            {% csrf_token %}
+            <ul>
+              <li><label class="" for="date">Date:</label>
+              <input class="" type="date" name="date"></li>
+              <li><label class="" for="task">Task:</label>
+              <input class="" type="text" name="task"></li>
+              <input id="shift" type="submit" value="Add Appointment">
+            </ul>
+          </form>
+       </div><!--close main-->
+      </div><!--close page-->
+    </div><!--close wrapper-->
+  </body>
+</html>

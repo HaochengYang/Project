@@ -1,0 +1,40 @@
+success<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login and Registration</title>
+    <meta name="description" content="This is the user login and registration page">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'newuser/css/index.css' %}">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="registration">
+        <form action="" method="POST">
+          {% csrf_token %}
+          <h4>Please create your user information</h4>
+          <p>First name:<input type="" name="first_name"></p>
+          <p>last name:<input type="" name="last_name"></p>
+          <p>Email:<input type="" name="email"></p>
+          <p>Password:<input type="" name="password"></p>
+          <p>Confirm Password:<input type="" name="confirm_password"></p>
+          <input type="submit" value="submit">
+      </form><!--close register form-->
+      </div><!--close registration-->
+      <div id="login">
+        <form action="" method="POST">
+          {% csrf_token %}
+          <h4>Please login Your Account</h4>
+          <p>Email: <input type="text" name="email"></p>
+          <p>Password: <input type="password" name="password"></p>
+          <input type="submit" value="login">
+        </form><!--close login form-->
+      </div><!--close login-->
+      {% if messages %}
+            {% for message in messages %}
+                <h5>{{ message }}</h5>
+            {% endfor %}
+       {% endif %}
+    </div><!--close wrapper-->
+  </body>
+</html>

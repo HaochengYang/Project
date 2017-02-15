@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Time Display</title>
+    <meta name='description' content="This is for display time assignment">
+    {%load staticfiles%}
+    <link rel="stylesheet" type='text/css' href='{% static "timedisplay/css/index.css" %}'>
+  </head>
+  <body>
+   <div id="main">
+     <div id="top-box">
+       <h3>The current time and data</h3>
+     </div><!--close the top-box-->
+     <div id="Buttom-box">
+       <h1>{{data}}</h1>
+     </div><!--close Buttom-box-->
+   </div><!--close the main-->
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Show Result Html</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'Book/css/index.css' %}">
+  </head>
+  </head>
+  <body>
+    <div id="wrapper">
+      <a class="right_page" href="{% url 'Book:index' %}">Home</a>
+      <a class="right_page" href="{% url 'Book:add' %}">Add Book and Review</a>
+      <a class="right_page" href="{% url 'logreg:logout' %}">Log Out</a>
+      <div id="page">
+        <div id="main">
+          <h3>User Alia:</h3>
+        </div><!--close main-->
+      </div><!--close page-->
+    </div><!--close wrapper-->
+  </body>
+</html>

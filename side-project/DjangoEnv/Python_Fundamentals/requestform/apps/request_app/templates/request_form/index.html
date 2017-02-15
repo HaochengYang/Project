@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test for the request form</title>
+  </head>
+  <body>
+    <div id="mian">
+    <h1>Makes me happy</h1>
+    {{request.session.name}}
+    <form action="/new_users" method="post">
+      {% csrf_token %}
+      First name:<input type="text" name="First_name">
+      Last name:<input type="text" name="Last_name">
+      <input type="submit" value"submit">
+    </form>
+  </div><!--close main-->
+  </body>
+</html>

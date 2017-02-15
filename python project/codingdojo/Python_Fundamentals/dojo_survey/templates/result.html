@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Something Interesting</title>
+    <meta name="description" content="This is the result page for user's input"
+  </head>
+  <body>
+    <div id="main">
+      <div id="output">
+      </div><!--close output-->
+      <p>The User's name is: {{session['name']}}</p>
+      <p>The User's location is: {{session['location']}}</p>
+      <p>The User's language is: {{session['language']}}</p>
+      <p>The User's comment is: {{session['comment']}}</p>
+      <form action='/' method="get">
+    </div><!--close the main div-->
+    <input type='submit' value='Go Back'>
+  </body>
+</html>

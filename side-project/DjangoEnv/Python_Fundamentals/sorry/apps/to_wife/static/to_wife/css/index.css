@@ -1,0 +1,22 @@
+.page {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+}
+.page h1{
+  text-align: center;
+}
+
+#answer_yes{
+  display:none;
+}
+
+#show_image{
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 40px;
+  overflow-y: scroll;
+  height:600px;
+  width: 250px;
+  border: 1px solid black;
+}

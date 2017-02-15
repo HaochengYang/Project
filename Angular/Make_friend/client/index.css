@@ -1,0 +1,14 @@
+
+form {
+  display: inline-block;
+  vertical-align: top;
+}
+table {
+  vertical-align: top;
+  display:inline-block;
+}
+
+a {
+  margin-top: 100px;
+  display: block;
+}

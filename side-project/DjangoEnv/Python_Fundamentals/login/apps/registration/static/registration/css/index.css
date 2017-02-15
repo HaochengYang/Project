@@ -1,0 +1,17 @@
+.login_registration {
+  display: inline-block;
+  vertical-align: top;
+  width: 280px;
+}
+.login_registration h3{
+  text-align: center;
+}
+.login_registration p{
+  padding-left: 20px;
+}
+
+#log_reg{
+  background: lightblue;
+  width: 565px;
+  margin: 0 auto;
+}

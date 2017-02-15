@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>This main page for belt review</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'Book/css/index.css' %}">
+  </head>
+  <body>
+   <div id="wrapper">
+     <a class="right_page" href="{% url 'Book:add' %}">Add Book and Review</a>
+     <a class="right_page" href="{% url 'logreg:logout' %}">Log Out</a>
+     <div id="page">
+       Welocme, {{request.session.user_first_name}}
+       <div id="main">
+         <div id="display_box1">
+           <h3>Recent Book Reviews:</h3>
+         </div>
+         <div id="display_box2">
+           <h3>Other Books with Views:</h3>
+         </div>
+       </div><!--close main-->
+     </div><!--close page-->
+   </div><!--close wrapper-->
+  </body>
+</html>

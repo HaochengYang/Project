@@ -1,0 +1,20 @@
+<div ng-controller='userController'>
+   <div id="header">
+     <ul>
+       <li>Bucket List</li>
+       <li><a href="#/dash">Home</a></li>
+       <li><a href="/logout">Logout</a></li>
+     </ul><br>
+   </div><!--close header-->
+ <div id="content" ng-controller="bucketController">
+   <h3>'s Bucket List</h3>
+   <h3>Done:</h3>
+   <ul ng-repeat="bucket in buckets">
+     <li><input type="checkbox">{{bucket}}</li>
+   </ul>
+   <h3>Pending:</h3>
+   <ul ng-repeat="bucket in buckets">
+     <li><input type="checkbox">{{bucket}}</li>
+   </ul>
+ </div><!--close content-->
+</div>

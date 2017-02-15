@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Friends</title>
+    <meta name="description" content="This is the test for the database">
+  </head>
+  <body>
+    {{all_friends}}
+    <h1>These are call my friends!</h1>
+    {% for friend in all_friends: %}
+    <p>ID:{{friend['id']}}</p>
+    <p>First Name:{{friend['first_name']}}</p>
+    <p>Last Name:{{friend['last_name']}}</p>
+    <p>Occupation: {{friend['occupation']}}</p>
+    {% endfor %}
+    <hr>
+    <p>First Name:Jimmy</p>
+    <p>Last Name:Jun</p>
+    <p>Occupation: Instructor</p>
+    <hr>
+    <h2>Add a Friend</h2>
+    <form action='friends' method='POST'>
+      <label for="first_name">First Name:<input type="type" name="first_name" id="first_name"></label>
+      <label for="last_name">Last Name:<input type="type" name="last_name" id="last_name"></label>
+      <label for="occupation">Occupation:<input type="type" name="occupation" id="occupation"></label>
+      <input type='submit' value="Add">
+      <label></label>
+    </form>
+  </body>
+</html>

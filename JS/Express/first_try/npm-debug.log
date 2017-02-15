@@ -1,0 +1,262 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'express',
+1 verbose cli   'path',
+1 verbose cli   'bodyparser',
+1 verbose cli   'ejs' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.4
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData express
+8 silly fetchPackageMetaData path
+9 silly fetchPackageMetaData bodyparser
+10 silly fetchPackageMetaData ejs
+11 silly fetchNamedPackageData express
+12 silly mapToRegistry name express
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'express',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   escapedName: 'express',
+15 silly mapToRegistry   name: 'express',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/express
+17 silly fetchNamedPackageData path
+18 silly mapToRegistry name path
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry data Result {
+21 silly mapToRegistry   raw: 'path',
+21 silly mapToRegistry   scope: null,
+21 silly mapToRegistry   escapedName: 'path',
+21 silly mapToRegistry   name: 'path',
+21 silly mapToRegistry   rawSpec: '',
+21 silly mapToRegistry   spec: 'latest',
+21 silly mapToRegistry   type: 'tag' }
+22 silly mapToRegistry uri https://registry.npmjs.org/path
+23 silly fetchNamedPackageData bodyparser
+24 silly mapToRegistry name bodyparser
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry https://registry.npmjs.org/
+27 silly mapToRegistry data Result {
+27 silly mapToRegistry   raw: 'bodyparser',
+27 silly mapToRegistry   scope: null,
+27 silly mapToRegistry   escapedName: 'bodyparser',
+27 silly mapToRegistry   name: 'bodyparser',
+27 silly mapToRegistry   rawSpec: '',
+27 silly mapToRegistry   spec: 'latest',
+27 silly mapToRegistry   type: 'tag' }
+28 silly mapToRegistry uri https://registry.npmjs.org/bodyparser
+29 silly fetchNamedPackageData ejs
+30 silly mapToRegistry name ejs
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry data Result {
+33 silly mapToRegistry   raw: 'ejs',
+33 silly mapToRegistry   scope: null,
+33 silly mapToRegistry   escapedName: 'ejs',
+33 silly mapToRegistry   name: 'ejs',
+33 silly mapToRegistry   rawSpec: '',
+33 silly mapToRegistry   spec: 'latest',
+33 silly mapToRegistry   type: 'tag' }
+34 silly mapToRegistry uri https://registry.npmjs.org/ejs
+35 verbose request uri https://registry.npmjs.org/path
+36 verbose request no auth needed
+37 info attempt registry request try #1 at 15:27:45
+38 verbose request id 6e24782c548a7833
+39 http request GET https://registry.npmjs.org/path
+40 verbose request uri https://registry.npmjs.org/bodyparser
+41 verbose request no auth needed
+42 info attempt registry request try #1 at 15:27:45
+43 http request GET https://registry.npmjs.org/bodyparser
+44 verbose request uri https://registry.npmjs.org/ejs
+45 verbose request no auth needed
+46 info attempt registry request try #1 at 15:27:45
+47 verbose etag W/"58756ed1-1011f"
+48 verbose lastModified Tue, 10 Jan 2017 23:31:29 GMT
+49 http request GET https://registry.npmjs.org/ejs
+50 verbose request uri https://registry.npmjs.org/express
+51 verbose request no auth needed
+52 info attempt registry request try #1 at 15:27:45
+53 verbose etag W/"58763ce1-85656"
+54 verbose lastModified Wed, 11 Jan 2017 14:10:41 GMT
+55 http request GET https://registry.npmjs.org/express
+56 http 304 https://registry.npmjs.org/ejs
+57 verbose headers { date: 'Thu, 12 Jan 2017 23:03:21 GMT',
+57 verbose headers   via: '1.1 varnish',
+57 verbose headers   'cache-control': 'max-age=300',
+57 verbose headers   etag: 'W/"58756ed1-1011f"',
+57 verbose headers   age: '68',
+57 verbose headers   connection: 'keep-alive',
+57 verbose headers   'x-served-by': 'cache-sjc3627-SJC',
+57 verbose headers   'x-cache': 'HIT',
+57 verbose headers   'x-cache-hits': '1',
+57 verbose headers   'x-timer': 'S1484262201.111178,VS0,VE0',
+57 verbose headers   vary: 'Accept-Encoding' }
+58 silly get cb [ 304,
+58 silly get   { date: 'Thu, 12 Jan 2017 23:03:21 GMT',
+58 silly get     via: '1.1 varnish',
+58 silly get     'cache-control': 'max-age=300',
+58 silly get     etag: 'W/"58756ed1-1011f"',
+58 silly get     age: '68',
+58 silly get     connection: 'keep-alive',
+58 silly get     'x-served-by': 'cache-sjc3627-SJC',
+58 silly get     'x-cache': 'HIT',
+58 silly get     'x-cache-hits': '1',
+58 silly get     'x-timer': 'S1484262201.111178,VS0,VE0',
+58 silly get     vary: 'Accept-Encoding' } ]
+59 verbose etag https://registry.npmjs.org/ejs from cache
+60 verbose get saving ejs to C:\Users\kew1102\AppData\Roaming\npm-cache\registry.npmjs.org\ejs\.cache.json
+61 verbose correctMkdir C:\Users\kew1102\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+62 http 200 https://registry.npmjs.org/path
+63 verbose headers { server: 'nginx/1.10.1',
+63 verbose headers   'content-type': 'application/json',
+63 verbose headers   'last-modified': 'Wed, 11 Jan 2017 13:21:04 GMT',
+63 verbose headers   etag: 'W/"58763140-1693"',
+63 verbose headers   'content-encoding': 'gzip',
+63 verbose headers   'cache-control': 'max-age=300',
+63 verbose headers   'content-length': '1734',
+63 verbose headers   'accept-ranges': 'bytes',
+63 verbose headers   date: 'Thu, 12 Jan 2017 23:03:21 GMT',
+63 verbose headers   via: '1.1 varnish',
+63 verbose headers   age: '33',
+63 verbose headers   connection: 'keep-alive',
+63 verbose headers   'x-served-by': 'cache-sjc3122-SJC',
+63 verbose headers   'x-cache': 'HIT',
+63 verbose headers   'x-cache-hits': '1',
+63 verbose headers   'x-timer': 'S1484262201.111145,VS0,VE0',
+63 verbose headers   vary: 'Accept-Encoding' }
+64 silly get cb [ 200,
+64 silly get   { server: 'nginx/1.10.1',
+64 silly get     'content-type': 'application/json',
+64 silly get     'last-modified': 'Wed, 11 Jan 2017 13:21:04 GMT',
+64 silly get     etag: 'W/"58763140-1693"',
+64 silly get     'content-encoding': 'gzip',
+64 silly get     'cache-control': 'max-age=300',
+64 silly get     'content-length': '1734',
+64 silly get     'accept-ranges': 'bytes',
+64 silly get     date: 'Thu, 12 Jan 2017 23:03:21 GMT',
+64 silly get     via: '1.1 varnish',
+64 silly get     age: '33',
+64 silly get     connection: 'keep-alive',
+64 silly get     'x-served-by': 'cache-sjc3122-SJC',
+64 silly get     'x-cache': 'HIT',
+64 silly get     'x-cache-hits': '1',
+64 silly get     'x-timer': 'S1484262201.111145,VS0,VE0',
+64 silly get     vary: 'Accept-Encoding' } ]
+65 verbose get saving path to C:\Users\kew1102\AppData\Roaming\npm-cache\registry.npmjs.org\path\.cache.json
+66 verbose correctMkdir C:\Users\kew1102\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+67 http 304 https://registry.npmjs.org/express
+68 verbose headers { date: 'Thu, 12 Jan 2017 23:03:21 GMT',
+68 verbose headers   via: '1.1 varnish',
+68 verbose headers   'cache-control': 'max-age=300',
+68 verbose headers   etag: 'W/"58763ce1-85656"',
+68 verbose headers   age: '220',
+68 verbose headers   connection: 'keep-alive',
+68 verbose headers   'x-served-by': 'cache-sjc3635-SJC',
+68 verbose headers   'x-cache': 'HIT',
+68 verbose headers   'x-cache-hits': '3',
+68 verbose headers   'x-timer': 'S1484262201.294987,VS0,VE0',
+68 verbose headers   vary: 'Accept-Encoding' }
+69 silly get cb [ 304,
+69 silly get   { date: 'Thu, 12 Jan 2017 23:03:21 GMT',
+69 silly get     via: '1.1 varnish',
+69 silly get     'cache-control': 'max-age=300',
+69 silly get     etag: 'W/"58763ce1-85656"',
+69 silly get     age: '220',
+69 silly get     connection: 'keep-alive',
+69 silly get     'x-served-by': 'cache-sjc3635-SJC',
+69 silly get     'x-cache': 'HIT',
+69 silly get     'x-cache-hits': '3',
+69 silly get     'x-timer': 'S1484262201.294987,VS0,VE0',
+69 silly get     vary: 'Accept-Encoding' } ]
+70 verbose etag https://registry.npmjs.org/express from cache
+71 verbose get saving express to C:\Users\kew1102\AppData\Roaming\npm-cache\registry.npmjs.org\express\.cache.json
+72 verbose correctMkdir C:\Users\kew1102\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+73 http 404 https://registry.npmjs.org/bodyparser
+74 verbose headers { 'content-type': 'application/json',
+74 verbose headers   'cache-control': 'max-age=0',
+74 verbose headers   'content-length': '2',
+74 verbose headers   'accept-ranges': 'bytes',
+74 verbose headers   date: 'Thu, 12 Jan 2017 23:03:21 GMT',
+74 verbose headers   via: '1.1 varnish',
+74 verbose headers   age: '0',
+74 verbose headers   connection: 'keep-alive',
+74 verbose headers   'x-served-by': 'cache-sjc3625-SJC',
+74 verbose headers   'x-cache': 'MISS',
+74 verbose headers   'x-cache-hits': '0',
+74 verbose headers   'x-timer': 'S1484262201.107253,VS0,VE229',
+74 verbose headers   vary: 'Accept-Encoding' }
+75 silly get cb [ 404,
+75 silly get   { 'content-type': 'application/json',
+75 silly get     'cache-control': 'max-age=0',
+75 silly get     'content-length': '2',
+75 silly get     'accept-ranges': 'bytes',
+75 silly get     date: 'Thu, 12 Jan 2017 23:03:21 GMT',
+75 silly get     via: '1.1 varnish',
+75 silly get     age: '0',
+75 silly get     connection: 'keep-alive',
+75 silly get     'x-served-by': 'cache-sjc3625-SJC',
+75 silly get     'x-cache': 'MISS',
+75 silly get     'x-cache-hits': '0',
+75 silly get     'x-timer': 'S1484262201.107253,VS0,VE229',
+75 silly get     vary: 'Accept-Encoding' } ]
+76 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/bodyparser
+76 silly fetchPackageMetaData     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+76 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:280:14)
+76 silly fetchPackageMetaData     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+76 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+76 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+76 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+76 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+76 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+76 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+76 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+76 silly fetchPackageMetaData  error for bodyparser { Error: Registry returned 404 for GET on https://registry.npmjs.org/bodyparser
+76 silly fetchPackageMetaData     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+76 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:280:14)
+76 silly fetchPackageMetaData     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+76 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+76 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+76 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+76 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+76 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+76 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+76 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12) pkgid: 'bodyparser', statusCode: 404, code: 'E404' }
+77 silly rollbackFailedOptional Starting
+78 silly rollbackFailedOptional Finishing
+79 silly runTopLevelLifecycles Finishing
+80 silly install printInstalled
+81 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/bodyparser
+81 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+81 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:280:14)
+81 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+81 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+81 verbose stack     at emitTwo (events.js:106:13)
+81 verbose stack     at Request.emit (events.js:191:7)
+81 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+81 verbose stack     at emitOne (events.js:96:13)
+81 verbose stack     at Request.emit (events.js:188:7)
+81 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+82 verbose statusCode 404
+83 verbose pkgid bodyparser
+84 verbose cwd C:\Users\kew1102\Desktop\Project\JS\Express\first_try
+85 error Windows_NT 10.0.14393
+86 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "express" "path" "bodyparser" "ejs"
+87 error node v6.9.4
+88 error npm  v3.10.10
+89 error code E404
+90 error 404 Registry returned 404 for GET on https://registry.npmjs.org/bodyparser
+91 error 404
+92 error 404 'bodyparser' is not in the npm registry.
+93 error 404 You should bug the author to publish it (or use the name yourself!)
+94 error 404 Note that you can also install from a
+95 error 404 tarball, folder, http url, or git url.
+96 verbose exit [ 1, true ]

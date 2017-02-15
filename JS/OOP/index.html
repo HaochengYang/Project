@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>OOP</title>
+    <script>
+    var timeoutID;
+
+function delayedAlert() {
+  timeoutID = window.setTimeout(slowAlert, 2000);
+}
+
+function slowAlert() {
+  alert("That was really slow!");
+}
+
+function clearAlert() {
+  window.clearTimeout(timeoutID);
+}
+    </script>
+  </head>
+  <body>
+  <p>Live Example</p>
+ <button onclick="delayedAlert();">Show an alert box after two seconds</button>
+ <p></p>
+ <button onclick="clearAlert();">Cancel alert before it happens</button>
+  </body>
+</html>

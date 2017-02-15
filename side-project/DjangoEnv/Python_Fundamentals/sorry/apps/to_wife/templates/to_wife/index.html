@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sorry</title>
+    <meta name="description" content="This is the assignment for kewei">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'to_wife/css/index.css' %}">
+  </head>
+  <body>
+     <div id="wrapper">
+       <div id="main">
+            <h1>Sorry Bao Bao</h1>
+         <div class="page">
+           <img src="{% static 'to_wife/image/1.jpg' %}" height="400" width="350">
+           <form class="" action="{% url 'return_answer' %}" method="POST">
+             {% csrf_token %}
+             <p><b>Will you forgive me? </b></p>
+             <select name="answer">
+               <option value="Yes">Yes</option>
+               <option value="No">No</option>
+             </select>
+             <input type="submit" value="submit">
+           </form>
+         </div><!--close page-->
+         <div class="page">
+           {% if messages %}
+             {% for message in messages %}
+               <h3>{{message}}</h3>
+               <img src="{% static 'to_wife/image/2.jpg' %}" height="200" width="200">
+               <form class="" action="{% url 'return_answer' %}" method="POST">
+                 {% csrf_token %}
+                 <p><b>Will you forgive me? </b></p>
+                 <select name="answer">
+                   <option value="Yes">Yes</option>
+                   <option value="No">No</option>
+                 </select>
+                 <input type="submit" value="submit">
+               </form>
+             {% endfor %}
+           {% endif %}
+         </div><!--close page-->
+       </div><!--close main-->
+     </div><!--close wrapper-->
+  </body>
+</html>

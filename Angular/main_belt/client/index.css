@@ -1,0 +1,25 @@
+#header{
+  border: 1px solid black;
+  height: 15%;
+  background-color: #eee;
+}
+#header ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#header li {
+  display: block;
+    float: left;
+}
+#header li a {
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+h3{
+  padding-left: 2%;
+}
+form{
+  padding-left: 2%;
+}

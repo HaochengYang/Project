@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="product_order">
+  <head>
+    <meta charset="utf-8">
+    <title>Product Assignment</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="./controller/product-controller.js"></script>
+  </head>
+  <body>
+  <dir id='wrapper' >
+    <dir id="main content" ng-controller="product-controller">
+      <form>
+        <p>Product Name:<input type="text" ng-model='newproduct.name'></p>
+        <p>Product Price: <input type="text" ng-model='newproduct.price'> </p>
+        <p>Product Quantity: <input type="text" ng-model='newproduct.quantity'></p>
+        <p><input type="submit" value="Add Product" ng-click="add()"></p>
+      </form>
+      <table ng-repeat='product in products'>
+        <tr>
+          <th>Name:</th>
+          <th>Price:</th>
+          <th>Action:</th>
+        </tr>
+        <tr>
+          <td>{{product.name}}</td>
+          <td>{{product.price}}</td>
+          <td><button ng-click='delete()'>Delete</button></td>
+        </tr>
+      </table>
+      <table ng-repeat='product in products'>
+        <tr>
+          <th>Name:</th>
+          <th>Price:</th>
+          <th>Qut Avaliable:</th>
+          <th>Action:</th>
+        </tr>
+        <tr>
+          <td>{{product.name}}</td>
+          <td>{{product.price}}</td>
+          <td>{{product.quantity}}</td>
+          <td><button ng-click='buy()'>Buy</button></td>
+        </tr>
+      </table>
+    </div>
+  </dir>
+  </body>
+</html>

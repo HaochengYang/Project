@@ -1,0 +1,32 @@
+#main {
+  margin: 0 auto;
+  text-align: left;
+  height: auto;
+  border: 3px solid #eee;
+  width:310px;
+  padding: 10px;
+}
+
+#input-section{
+  vertical-align: top;
+  width: 130px;
+  display:inline-block;
+}
+#input-section input{
+  margin-bottom: 15px;
+}
+
+
+#input-title{
+  font-size: 18px;
+  text-align: right;
+  margin-top: -20px;
+  display: inline-block;
+  vertical-align: top;
+  width:130px;
+}
+
+button{
+  font-size: 18px;
+margin-left: 220px;
+}

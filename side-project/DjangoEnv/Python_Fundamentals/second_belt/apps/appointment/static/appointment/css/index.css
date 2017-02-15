@@ -1,0 +1,10 @@
+#main li{
+  list-style: none;
+  padding: 20px;
+}
+#main ul{
+  margin-left: -40px;
+}
+#shift{
+  margin-left: 100px;
+}

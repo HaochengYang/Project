@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>dojo-survey</title>
+    <meta name="description" content="This is a codingdojo's practice survey"/>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/survey.css') }}">
+    <!--css of index.html goes here-->
+  </head>
+  <body>
+    <div id="main">
+      <h2>Please enter your information at below</h2>
+       <div id="input-title">
+        <p>  Your name: </p>
+        <p>  Dojo Location:</p>
+        <p>  Favorite Language:</p>
+        <p>  Comment(optional):</p>
+      </div><!--close the inout-title-->
+        <div id="input-section">
+          <form action='/result' method="POST">
+          <input type="text" name="name"></input>
+          <input type="text" name="location"></input>
+          <input type="text" name="language"></input>
+          <textarea type="text" name="comment"></textarea>
+          <button type="submit" value="create user">submit</button>
+        </form>
+        </div><!--close the inpuy-section-->
+
+    </div><!--close main page here-->
+  </body>
+</html>

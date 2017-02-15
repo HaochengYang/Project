@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="food_app">
+  <head>
+    <meta charset="utf-8">
+    <title>Food assignment</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="./controller/food_controller.js"></script>
+  </head>
+  <body>
+  <div ng-controller="food_controller">
+    <form>
+      Favorite Food: <input type="text" ng-model="favorite_food"> <input type="submit" ng-click="create()" value="submit">
+      <span>search:<input type="text" ng-model='search'></span>
+      <p>current Typing:{{favorite_food}}</p>
+      <ul style="margin-left:400px;">
+        <li ng-repeat="food in foods | filter:search">{{food}}</li>
+      </ul>
+    </form>
+  </div>
+  </body>
+</html>
